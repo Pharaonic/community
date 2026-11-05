@@ -1,0 +1,37 @@
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have a reproducible bug? Open an issue in the package's repository instead. Found a vulnerability? Report it privately through that repository's **Security** tab.
+
+        Remove API keys, `.env` values, and other private data before posting.
+  - type: input
+    id: package
+    attributes:
+      label: Package
+      description: The Composer name, if your question is about a specific package.
+      placeholder: pharaonic/php-diff
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: The package, PHP, and framework versions you are using.
+      placeholder: "Package 1.2.0, PHP 8.4, Laravel 12"
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What are you trying to do, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: code
+    attributes:
+      label: Code sample
+      description: The smallest example that shows the problem, plus any full error message.
+      render: php
+  - type: textarea
+    id: tried
+    attributes:
+      label: What you have tried
+      description: Documentation you read, or solutions that did not work.

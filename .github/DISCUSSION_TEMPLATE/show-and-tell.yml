@@ -1,0 +1,24 @@
+body:
+  - type: textarea
+    id: project
+    attributes:
+      label: What you built
+      description: What it does, and the problem it solves.
+    validations:
+      required: true
+  - type: input
+    id: packages
+    attributes:
+      label: Pharaonic packages used
+      placeholder: pharaonic/laravel-seo, pharaonic/php-hijri
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      description: A repository, demo, or article, if you have one.
+      placeholder: https://
+  - type: textarea
+    id: lessons
+    attributes:
+      label: What you learned
+      description: What worked well, what was hard, and what you would change.
